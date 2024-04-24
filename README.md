@@ -6,17 +6,39 @@ This is an implementation of the following papers:
 
 ## Requirement
 - Python 3.8+
-- pip 
+- [Rye](https://rye-up.com/) or pip
 
-To install the requirements:
-```setup
-pip install -r requirements.txt
+## Setup
+### With Rye (Recommended)
+After installing [Rye](https://rye-up.com/guide/installation/), executing the following command(s):
+```bash
+$ rye sync
+$ rye shell # optional
 ```
 
-## Running CLOUD
-### Simple Simulated Data
+You can now import and use the ```CLOUD``` class:
+```python
+from cloud import CLOUD
+```
+
+### Without Rye
+Create a new virtual environment and install the dependencies:
+```setup
+$ python -m venv .venv
+$ source .venv/bin/activate
+$ pip install -r requirements.lock
+```
+
+
+
+## Run CLOUD
+### Sample Data
 ```bash
-python -m unittest tests/test_cloud.py
+$ python -m unittest tests/test_cloud.py
+```
+If you are using Rye, you can also run the tests with:
+```bash
+$ rye run python -m unittest tests/test_cloud.py
 ```
 ## Licence
 [MIT](https://github.com/Matsushima-lab/Cloud/blob/main/LICENSE)

@@ -137,7 +137,7 @@ class BaseModel:
 class CLOUD:
     def __init__(self, X, Y, n_candidates: int,
                  X_ndistinct_vals: Optional[int] = None, Y_ndistinct_vals: Optional[int] = None,
-                 is_X_continuous: bool = False, is_Y_continuous: bool = False, max_exponent: int = 10):
+                 is_X_continuous: bool = False, is_Y_continuous: bool = False, max_exponent: int = 6):
         """
         Args
         ------
