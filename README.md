@@ -48,7 +48,7 @@ If you use this repository in your research, please cite the journal version.
   year={2026},
   publisher={Springer},
   doi={10.1007/s10618-025-01166-8},
-  url={https://doi.org/10.1007/s10618-025-01166-8},
+  url={https://doi.org/10.1007/s10618-025-01166-8}
 }
 ```
 
