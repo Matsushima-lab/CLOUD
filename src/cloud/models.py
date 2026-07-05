@@ -1,11 +1,11 @@
-# cloud/models.py
+# src/cloud/models.py
 from __future__ import annotations
 from dataclasses import dataclass
 import numpy as np
 from abc import ABC, abstractmethod
-from cloud.enums import CausalGraph
-from cloud.codelengths import nll_from_counts, log_C_CAT, universal_integer_code
-from cloud.regressor import DiscreteRegressor
+from .enums import CausalGraph
+from .codelengths import nll_from_counts, log_C_CAT, universal_integer_code
+from .regressor import DiscreteRegressor
 
 
 def discretize(x: np.ndarray, m: int) -> np.ndarray:
